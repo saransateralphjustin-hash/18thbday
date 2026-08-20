@@ -75,7 +75,7 @@ if (countdownEl) {
     secsEl.textContent = pad(secs);
   }
 
-  if (noteEl) noteEl.textContent = ' ';
+  if (noteEl) noteEl.textContent = 'test';
   tick();
   const timer = setInterval(tick, 1000);
 }
