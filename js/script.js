@@ -75,7 +75,7 @@ if (countdownEl) {
     secsEl.textContent = pad(secs);
   }
 
-  if (noteEl) noteEl.textContent = 'Time shown adjusts automatically for your location.';
+  if (noteEl) noteEl.textContent = ' ';
   tick();
   const timer = setInterval(tick, 1000);
 }
