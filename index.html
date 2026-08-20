@@ -1,0 +1,403 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Renzy Jewel Saransate — 18th Birthday Celebration</title>
+<meta name="description" content="Join us in celebrating Renzy Jewel Saransate's 18th Birthday — September 12, 2026 at Lex Forum Function Hall, General Santos City." />
+
+<!-- Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,400;1,500&family=Jost:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+<!-- Paper / grain texture overlay -->
+<div class="grain-overlay" aria-hidden="true"></div>
+
+<!-- Floating Navigation -->
+<nav class="site-nav" id="siteNav">
+  <div class="nav-inner">
+    <a href="#hero" class="nav-mark">RJS</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Open menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#hero" data-nav>Home</a></li>
+      <li><a href="#celebration" data-nav>Celebration</a></li>
+      <li><a href="#venue" data-nav>Venue</a></li>
+      <li><a href="#entourage" data-nav>Entourage</a></li>
+      <li><a href="#gallery" data-nav>Gallery</a></li>
+      <li><a href="#dresscode" data-nav>Dress Code</a></li>
+      <li><a href="#rsvp" data-nav class="nav-cta">RSVP</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- ============ HERO ============ -->
+<header class="hero" id="hero">
+  <div class="hero-bloom hero-bloom--left" aria-hidden="true"></div>
+  <div class="hero-bloom hero-bloom--right" aria-hidden="true"></div>
+
+  <svg class="hero-vine hero-vine--top" viewBox="0 0 1200 160" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0,20 C150,80 250,10 400,50 C550,90 650,20 800,55 C950,90 1050,30 1200,60" />
+    <path class="leaf" d="M60,30 q20,-25 40,0 q-20,15 -40,0 Z" />
+    <path class="leaf" d="M420,45 q20,-25 40,0 q-20,15 -40,0 Z" />
+    <path class="leaf" d="M840,50 q20,-25 40,0 q-20,15 -40,0 Z" />
+  </svg>
+
+  <div class="hero-content" data-reveal>
+    <p class="eyebrow">Save the Date</p>
+    <h1 class="hero-name">Renzy Jewel<span class="hero-amp">&middot;</span>Saransate</h1>
+    <p class="hero-subtitle">18th Birthday Celebration</p>
+    <p class="hero-date">September 12, 2026 &nbsp;·&nbsp; Saturday &nbsp;·&nbsp; 6:00 PM</p>
+  </div>
+
+  <a href="#welcome" class="scroll-cue" aria-label="Scroll to explore">
+    <span class="scroll-cue-line"></span>
+    <span>Scroll to Explore</span>
+  </a>
+</header>
+
+<main>
+
+  <!-- ============ WELCOME / INVITATION ============ -->
+  <section class="section welcome" id="welcome">
+    <div class="section-inner narrow">
+      <svg class="ornament" viewBox="0 0 120 40" aria-hidden="true"><path d="M0,20 C30,0 90,0 120,20" /><circle cx="60" cy="20" r="3"/></svg>
+      <p class="script-line" data-reveal>Dearest Family &amp; Friends,</p>
+      <p class="body-copy center" data-reveal>
+        With hearts full of gratitude, we joyfully invite you to celebrate the 18th birthday of
+        <strong>Renzy Jewel Saransate</strong>. It would mean the world to have you with us as we
+        welcome this new chapter — with laughter, gratitude, and a night to remember.
+      </p>
+      <div class="invite-facts" data-reveal>
+        <div><span class="label">Celebrant</span><span class="value">Renzy Jewel Saransate</span></div>
+        <div><span class="label">Occasion</span><span class="value">18th Birthday</span></div>
+        <div><span class="label">Date</span><span class="value">Sept 12, 2026</span></div>
+        <div><span class="label">Time</span><span class="value">6:00 PM</span></div>
+        <div><span class="label">Venue</span><span class="value">Lex Forum Function Hall</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ COUNTDOWN ============ -->
+  <section class="section countdown-section">
+    <div class="section-inner narrow" data-reveal>
+      <p class="eyebrow center">Counting Down To (Philippine Time)</p>
+      <div class="countdown" id="countdown" data-date="2026-09-12T18:00:00+08:00">
+        <div class="count-block"><span class="count-num" id="cd-days">00</span><span class="count-label">Days</span></div>
+        <div class="count-div">•</div>
+        <div class="count-block"><span class="count-num" id="cd-hours">00</span><span class="count-label">Hours</span></div>
+        <div class="count-div">•</div>
+        <div class="count-block"><span class="count-num" id="cd-mins">00</span><span class="count-label">Minutes</span></div>
+        <div class="count-div">•</div>
+        <div class="count-block"><span class="count-num" id="cd-secs">00</span><span class="count-label">Seconds</span></div>
+      </div>
+      <p class="countdown-note" id="countdownNote"></p>
+    </div>
+  </section>
+
+  <!-- ============ CELEBRATION + VENUE ============ -->
+  <section class="section" id="celebration">
+    <div class="section-inner">
+      <div class="split-grid">
+        <div class="split-text" data-reveal>
+          <p class="eyebrow">The Celebration</p>
+          <h2 class="display-heading">18th Birthday</h2>
+          <p class="body-copy">
+            Join us for an evening of music, dinner, and heartfelt moments as we celebrate
+            eighteen wonderful years of Renzy Jewel.
+          </p>
+          <ul class="fact-list">
+            <li><strong>Date</strong> — Saturday, September 12, 2026</li>
+            <li><strong>Arrival</strong> — 5:30 PM</li>
+            <li><strong>Program Begins</strong> — 6:00 PM</li>
+          </ul>
+        </div>
+        <div class="split-media" data-reveal>
+          <div class="photo-frame photo-frame--a"><span>Photo</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section alt-bg" id="venue">
+    <div class="section-inner">
+      <div class="split-grid reverse">
+        <div class="split-media" data-reveal>
+          <div class="photo-frame photo-frame--b"><span>Venue Photo</span></div>
+        </div>
+        <div class="split-text" data-reveal>
+          <p class="eyebrow">The Venue</p>
+          <h2 class="display-heading">Lex Forum Function Hall</h2>
+          <p class="body-copy">
+            Andrade Subdivision, Yumang Street, General Santos City — an elegant hall set for
+            an evening of celebration with family and friends.
+          </p>
+          <a class="btn-outline" href="https://maps.google.com/?q=Lex+Forum+Function+Hall+Andrade+Subdivision+Yumang+Street+General+Santos+City" target="_blank" rel="noopener">View Location</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ STORY ============ -->
+  <section class="section story">
+    <div class="section-inner">
+      <p class="eyebrow center">Her Story</p>
+      <div class="story-grid">
+        <div class="story-photos" data-reveal>
+          <div class="photo-frame photo-frame--c"><span>Then</span></div>
+          <div class="photo-frame photo-frame--d"><span>Now</span></div>
+        </div>
+        <div class="story-text" data-reveal>
+          <p class="body-copy">
+            From a curious little girl to a young woman of grace, kindness, and quiet strength —
+            every year has been a step closer to who she was always becoming.
+          </p>
+          <p class="quote-line">&ldquo;She is clothed with strength and dignity, and she laughs without fear of the future.&rdquo;<br><span>Proverbs 31:25</span></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ GALLERY ============ -->
+  <section class="section alt-bg" id="gallery">
+    <div class="section-inner">
+      <p class="eyebrow center">Gallery</p>
+      <h2 class="display-heading center">Moments Worth Keeping</h2>
+      <div class="gallery-grid" id="galleryGrid">
+        <button class="g-item g-item--1" data-index="0"><span>01</span></button>
+        <button class="g-item g-item--2" data-index="1"><span>02</span></button>
+        <button class="g-item g-item--3" data-index="2"><span>03</span></button>
+        <button class="g-item g-item--4" data-index="3"><span>04</span></button>
+        <button class="g-item g-item--5" data-index="4"><span>05</span></button>
+        <button class="g-item g-item--6" data-index="5"><span>06</span></button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <button class="lb-close" id="lbClose" aria-label="Close gallery">&times;</button>
+    <button class="lb-prev" id="lbPrev" aria-label="Previous image">&#8249;</button>
+    <div class="lb-stage"><div class="lb-image" id="lbImage"></div></div>
+    <button class="lb-next" id="lbNext" aria-label="Next image">&#8250;</button>
+    <div class="lb-counter" id="lbCounter">1 / 6</div>
+  </div>
+
+  <!-- ============ ENTOURAGE ============ -->
+  <section class="section entourage" id="entourage">
+    <div class="section-inner">
+      <p class="eyebrow center">With Love From</p>
+      <h2 class="display-heading center">The Entourage</h2>
+      <p class="body-copy center">Eighteen tributes, eighteen names, one celebration.</p>
+
+      <div class="entourage-grid">
+
+        <div class="ent-card" data-reveal>
+          <h3 class="ent-heading">18 Roses</h3>
+          <ol class="name-list">
+            <li>Albino Saransate</li>
+            <li>Mc Stephen Gacal</li>
+            <li>Wilmar Anthony Dangane Jr.</li>
+            <li>John Andrei Saransate</li>
+            <li>Marvin Rey Morales</li>
+            <li>Jamear Ivan Camia</li>
+            <li>Ajie Saransate</li>
+            <li>Ianmars Andrew Camia</li>
+            <li>Stehven Reylle Morales</li>
+            <li>Jester Kynn Cabuyadao</li>
+            <li>Earl Aidoneh Henodia</li>
+            <li>John Wayne Pama</li>
+            <li>Adrian Enriquez</li>
+            <li>Aiji Kenji Abayato</li>
+            <li>Michael Roland Gacal</li>
+            <li>John Ray Casuga</li>
+            <li>Ralph Justin Saransate</li>
+            <li>Benjie Saransate</li>
+          </ol>
+        </div>
+
+        <div class="ent-card" data-reveal>
+          <h3 class="ent-heading">18 Candles</h3>
+          <ol class="name-list">
+            <li>Febielyn Saransate</li>
+            <li>Syra Ruby J. Palenzuela</li>
+            <li>Marjorie M. Suarez</li>
+            <li>Kate Shahyr Odal</li>
+            <li>Michaela Life Mabanag</li>
+            <li>Kai Sophia B. Alganme</li>
+            <li>Mary Shekainah C. Gelicame</li>
+            <li>Abigail Maningding</li>
+            <li>Jelliane Tacurda</li>
+            <li>Kiara Antonette C. Dangane</li>
+            <li>Claudette Pondales</li>
+            <li>Teitchie Meliton</li>
+            <li>Chloe Dionzon</li>
+            <li>Sweet Scarlet Amaiz</li>
+            <li>Crystal Lorraine Bacus</li>
+            <li>Johanne Vergara</li>
+            <li>Apryll Rhyne S. Pondales</li>
+            <li>Alyanna Claire R. Tabanao</li>
+          </ol>
+        </div>
+
+        <div class="ent-card" data-reveal>
+          <h3 class="ent-heading">18 Treasurers</h3>
+          <ol class="name-list">
+            <li>Emma Saransate</li>
+            <li>Susan Gacal</li>
+            <li>Mira Stephanie Gacal</li>
+            <li>Samantha Raine Balingit</li>
+            <li>Princess Shelliane Camia</li>
+            <li>Alexis Mae Pondales</li>
+            <li>Scarlet Mae Baigan</li>
+            <li>Julyzamae Bacus</li>
+            <li>Ashlee Mascardo</li>
+            <li>Anamarie Sabal</li>
+            <li>Neleh Rea Gacal</li>
+            <li>Kate Hefervez</li>
+            <li>Joan Mae Molejon</li>
+            <li>Kasmier Reyes</li>
+            <li>Princess Rhiannon S. Mariano</li>
+            <li>Megrod Annette Blas</li>
+            <li>Jonah Grace Sarrosa</li>
+            <li>Yvonne Laluna</li>
+          </ol>
+        </div>
+
+        <div class="ent-card" data-reveal>
+          <h3 class="ent-heading">18 Blue Bills</h3>
+          <ol class="name-list">
+            <li>Krystel Xenia Dangane</li>
+            <li>Jacqueline Saransate</li>
+            <li>Grace KateJune Pondales</li>
+            <li>Friday Ehurango</li>
+            <li>Johanna Gacal</li>
+            <li>Arshemae Gacal</li>
+            <li>Beverly Bacus</li>
+            <li>Mildred Hefervez</li>
+            <li>Sheila Salaan</li>
+            <li>Mishell Camia</li>
+            <li>Nelia Masardo</li>
+            <li>April Rolda</li>
+            <li>Sashan Octura</li>
+            <li>Mark Basit</li>
+            <li>Emierose Gacal</li>
+            <li>Cheryl Salindo</li>
+            <li>Jennifer Estabillo</li>
+            <li>Glycyrll Labrador</li>
+          </ol>
+        </div>
+
+        <div class="ent-card ent-card--wide" data-reveal>
+          <h3 class="ent-heading">18 Shots</h3>
+          <ol class="name-list name-list--wide">
+            <li>Febielyn Saransate</li>
+            <li>Syra Ruby J. Palenzuela</li>
+            <li>Marjorie M. Suarez</li>
+            <li>Jelliane Tacurda</li>
+            <li>Teitchie Meliton</li>
+            <li>Chloe Dionzon</li>
+            <li>Apryll Rhyne S. Pondales</li>
+            <li>Alyanna Claire R. Tabanao</li>
+            <li>John Andrei Saransate</li>
+            <li>Jamear Ivan Camia</li>
+            <li>Jester Kynn Cabuyadao</li>
+            <li>Scarlet Mae Baigan</li>
+            <li>Julyzamae Bacus</li>
+            <li>Wilmar Anthony Dangane Jr.</li>
+            <li>Emierose Gacal</li>
+            <li>Kate Hefervez</li>
+            <li>Marvin Rey Morales</li>
+            <li>Ralph Justin Saransate</li>
+          </ol>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ORDER OF EVENTS ============ -->
+  <section class="section alt-bg timeline-section">
+    <div class="section-inner narrow">
+      <p class="eyebrow center">Order of Events</p>
+      <h2 class="display-heading center">How the Evening Unfolds</h2>
+
+      <ol class="timeline">
+        <li data-reveal><span class="t-num">01</span><span class="t-text">Guest Arrival</span></li>
+        <li data-reveal><span class="t-num">02</span><span class="t-text">Opening Program</span></li>
+        <li data-reveal><span class="t-num">03</span><span class="t-text">Dinner</span></li>
+        <li data-reveal><span class="t-num">04</span><span class="t-text">Special Performances</span></li>
+        <li data-reveal><span class="t-num">05</span><span class="t-text">18 Roses, Candles, Treasurers, Blue Bills &amp; Shots</span></li>
+        <li data-reveal><span class="t-num">06</span><span class="t-text">Party &amp; Celebration</span></li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- ============ DRESS CODE ============ -->
+  <section class="section" id="dresscode">
+    <div class="section-inner narrow">
+      <p class="eyebrow center">Dress Code</p>
+      <h2 class="display-heading center">Attire &amp; Colors</h2>
+
+      <div class="dress-grid">
+        <div class="dress-card" data-reveal>
+          <h3>For Guests</h3>
+          <p>Olive green or deep brown attire is requested for all guests.</p>
+          <div class="swatches">
+            <span class="swatch" style="background:#6E7C4C" title="Olive Green"></span>
+            <span class="swatch" style="background:#4A3728" title="Deep Brown"></span>
+          </div>
+        </div>
+        <div class="dress-card" data-reveal>
+          <h3>For the 18&rsquo;s</h3>
+          <p>Roses, Candles, Treasurers, Blue Bills &amp; Shots are asked to wear black.</p>
+          <div class="swatches">
+            <span class="swatch" style="background:#1C1811" title="Black"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ RSVP ============ -->
+  <section class="section alt-bg rsvp-section" id="rsvp">
+    <div class="section-inner narrow">
+      <p class="eyebrow center">Kindly Respond</p>
+      <h2 class="display-heading center">RSVP</h2>
+      <p class="body-copy center">Please confirm your attendance through our RSVP form so we can prepare for your presence.</p>
+
+      <div class="rsvp-actions" data-reveal>
+        <a class="btn-solid" id="rsvpFormLink" href="https://forms.google.com/" target="_blank" rel="noopener">Open RSVP Form</a>
+      </div>
+
+      <div class="rsvp-embed-wrap" data-reveal>
+        <iframe
+          id="rsvpEmbed"
+          class="rsvp-embed"
+          src="https://docs.google.com/forms/d/e/PLACEHOLDER_FORM_ID/viewform?embedded=true"
+          title="RSVP Form"
+          loading="lazy">
+          Loading form&hellip;
+        </iframe>
+        <p class="rsvp-embed-note">If the form above doesn&rsquo;t load, use the &ldquo;Open RSVP Form&rdquo; button.</p>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p>Renzy Jewel Saransate &middot; 18th Birthday Celebration &nbsp;·&nbsp; September 12, 2026</p>
+  <p class="footer-fine">Made with love, for a night to remember.</p>
+  <p class="footer-credit">Created by SnoopX</p>
+</footer>
+
+<script src="js/script.js"></script>
+</body>
+</html>
