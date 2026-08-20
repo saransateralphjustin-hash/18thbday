@@ -318,6 +318,7 @@ img, .photo-frame{ max-width: 100%; display:block; }
 .photo-frame--c, .photo-frame--d{ aspect-ratio: 3/4; }
 .photo-frame--c{ background: linear-gradient(150deg,#E4CDB4,#C79A97); }
 .photo-frame--d{ background: linear-gradient(150deg,#9C6B6C,#5E4B3C); }
+.photo-frame--wide{ aspect-ratio: 4528/3016; object-fit: cover; }
 
 .btn-outline{
   display:inline-block; position: relative; overflow: hidden; margin-top: 30px; padding: 14px 32px;
