@@ -4,9 +4,16 @@
 const siteNav = document.getElementById('siteNav');
 const navToggle = document.getElementById('navToggle');
 const navLinks = document.getElementById('navLinks');
+const scrollProgress = document.getElementById('scrollProgress');
 
 window.addEventListener('scroll', () => {
   siteNav.classList.toggle('scrolled', window.scrollY > 40);
+
+  if (scrollProgress) {
+    const scrollable = document.documentElement.scrollHeight - window.innerHeight;
+    const pct = scrollable > 0 ? (window.scrollY / scrollable) * 100 : 0;
+    scrollProgress.style.width = pct + '%';
+  }
 }, { passive: true });
 
 navToggle.addEventListener('click', () => {
