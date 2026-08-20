@@ -141,7 +141,7 @@ if (countdownEl) {
 // ============================================================
 // GALLERY LIGHTBOX
 // ============================================================
-const galleryItems = Array.from(document.querySelectorAll('.g-item'));
+const galleryItems = Array.from(document.querySelectorAll('#galleryGrid .g-item'));
 const lightbox = document.getElementById('lightbox');
 const lbImage = document.getElementById('lbImage');
 const lbCounter = document.getElementById('lbCounter');
@@ -151,11 +151,10 @@ const lbNext = document.getElementById('lbNext');
 
 let currentIndex = 0;
 
-// Pull each gallery tile's background so the lightbox mirrors it,
-// and its number label for the placeholder caption.
+// Pull each gallery photo's real image src (and alt text for captioning).
 const galleryData = galleryItems.map(item => ({
-  background: getComputedStyle(item).backgroundImage,
-  label: item.querySelector('span') ? item.querySelector('span').textContent : ''
+  src: item.getAttribute('src'),
+  alt: item.getAttribute('alt') || ''
 }));
 
 function openLightbox(index) {
@@ -174,8 +173,8 @@ function closeLightbox() {
 
 function renderLightbox() {
   const data = galleryData[currentIndex];
-  lbImage.style.background = data.background;
-  lbImage.textContent = `Photo ${data.label}`;
+  lbImage.src = data.src;
+  lbImage.alt = data.alt;
   lbCounter.textContent = `${currentIndex + 1} / ${galleryData.length}`;
 }
 
